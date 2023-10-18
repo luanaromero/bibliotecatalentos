@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-10-2023 a las 21:45:46
+-- Tiempo de generación: 18-10-2023 a las 16:29:43
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.29
 
@@ -28,8 +28,8 @@ USE `biblioteca`;
 --
 -- Estructura de tabla para la tabla `libros`
 --
--- Creación: 16-10-2023 a las 21:28:43
--- Última actualización: 17-10-2023 a las 19:12:58
+-- Creación: 18-10-2023 a las 13:56:07
+-- Última actualización: 18-10-2023 a las 13:59:25
 --
 
 CREATE TABLE `libros` (
@@ -37,7 +37,7 @@ CREATE TABLE `libros` (
   `nombre` varchar(30) NOT NULL,
   `autor` varchar(30) NOT NULL,
   `categoria` varchar(30) NOT NULL,
-  `añopublicacion` date NOT NULL,
+  `ano_publicacion` date NOT NULL,
   `ISBN` varchar(13) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -45,7 +45,7 @@ CREATE TABLE `libros` (
 -- Volcado de datos para la tabla `libros`
 --
 
-INSERT INTO `libros` (`id`, `nombre`, `autor`, `categoria`, `añopublicacion`, `ISBN`) VALUES
+INSERT INTO `libros` (`id`, `nombre`, `autor`, `categoria`, `ano_publicacion`, `ISBN`) VALUES
 (1, 'Arde la vida', 'Magali Tajes', 'Literatura Juvenil', '2018-12-01', ' 978950076224'),
 (5, 'Caos', 'Maga Tajes', 'literatura juvenil', '2018-12-01', ' 978950076224');
 
@@ -67,7 +67,7 @@ ALTER TABLE `libros`
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
